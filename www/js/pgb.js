@@ -32,3 +32,16 @@ function meInfo() {
 	
 	navigator.notification.alert(info);
 }
+
+
+function businessCard() {
+	info = 'Imie i nazwisko: JUSTYNA KONIECZNY' + '\n' +
+		'Email: kojustynka@gmail.com' + '\n' +
+		'Website: brak' + '\n' +
+		'Grupa dziekanska: KrDUIS1012' + '\n' +
+		'Kierunek studiow: Informatyka Stosowana' + '\n' +
+		'Przedmiot: Bogate Aplikacje Internetowe';
+	
+	navigator.notification.alert(info);
+
+}
