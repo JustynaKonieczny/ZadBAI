@@ -2,18 +2,23 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="js/pgb.js"></script>
 		<script src="cordova.js"></script>
 	</head>
+	
 	<body onload="init()">
 		<h1>Hello World!</h1>
 		<p id="dp"></p>
 		<input type="button" onclick="deviceInfo()" value="Let me introduce myself!">
 		
 	<onload="init()">
-		<h1>INFO O MNIE</h1>
+		<h2>INFO O MNIE</h2>
 		<input type="button" onclick="meInfo()" value="About me!">
 		
+	<onload="init()">
+		<h1>Polaczenie WiFi</h1>
+		<input type="button" onclick="checkingConnection()" value="Znajdz siec WiFi">
 		
 	</body>
 </html>
