@@ -7,11 +7,28 @@
     <name>Second app</name>
     <description>My second mobile app</description>
     <author href="http://mypersonalwebsite.com" email="johnbrown@gmail.com">
-		Jokoko
+		Justyna
 	</author>
-	<platform name="android" />
-	
-	<plugin name="cordova-plugin-device" spec="~1.1.4" />
-	<plugin name="cordova-plugin-dialogs" spec="~1.3.1" />
+	    
+	      <icon src="res/splashscreen.png" /> 
+	    
+	<platform name="android">
 
+	  
+	  
+	<splash src="res/screen/android/splashscreen.png" density="port-ldpi" width="320" height="480"/>
+    <splash src="res/screen/android/splashscreen.png" density="port-ldpi" width="640" height="960"/>
+    <splash src="res/screen/android/splashscreen.png" density="port-ldpi" width="768" height="1024"/>
+    <splash src="res/screen/android/splashscreen.png" density="port-ldpi" width="1536" height="2048"/>
+    <splash src="res/screen/android/splashscreen.png" density="port-ldpi" width="1024" height="768"/>
+    <splash src="res/screen/android/splashscreen.png" density="port-ldpi" width="2048" height="1536"/>
+    <splash src="res/screen/android/splashscreen.png" density="port-ldpi" width="640" height="1136"/>
+    <splash src="res/screen/androidsplashscreen.png" density="port-ldpi" width="750" height="1334"/>
+    <splash src="res/screen/android/splashscreen.png" density="port-ldpi" width="1242" height="2208"/>
+	    
+		</platform>
+	    
+	 <plugin name="cordova-plugin-device" spec="~1.1.4" />
+	<plugin name="cordova-plugin-dialogs" spec="~1.3.1" />   
+	    
 </widget>
