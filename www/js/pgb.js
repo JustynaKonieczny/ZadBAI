@@ -34,7 +34,7 @@ function meInfo() {
 }
 
 /*FUNKCJA POLACZENIA Z SIECIA https://github.com/apache/cordova-plugin-network-information*/
-function checkingConnection() {
+function checkConnection() {
     var networkState = navigator.connection.type;
 
     var states = {};
