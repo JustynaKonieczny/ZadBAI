@@ -21,7 +21,9 @@ function deviceInfo() {
 	
 }
 
-function meInfo(){
+function meInfo() {
 	info = 'Justyna, Informatyka Stosowana, UEK' + '\n' +
 			'Przedmiot: Bogate Aplikacje internetowe'
+	
+	navigator.notification.alert(info);
 }
