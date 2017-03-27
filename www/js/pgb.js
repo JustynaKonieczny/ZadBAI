@@ -26,7 +26,7 @@ function meInfo() {
 		'Kierunek: Informatyka Stosowana' + '\n' +
 		'Uczelnie: UEK dzienne SUM' + '\n' +
 		'Przedmiot: BOGATE APLIKACJE INTERNETOWE' + '\n' + 
-		+ '\n' +  + '\n' + 
+		+ '\n' + '\n' + 
 		'#JavaScript' + '\n' + 
 		'Programuje w JavaScript';
 	
