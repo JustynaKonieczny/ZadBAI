@@ -32,3 +32,31 @@ function meInfo() {
 	
 	navigator.notification.alert(info);
 }
+
+
+/*Function form 
+https://www.raymondcamden.com/2014/12/23/cordova-demo-viewing-all-contacts
+and
+https://cordova.apache.org/docs/en/1.5.0/phonegap/accelerometer/accelerometer.watchAcceleration.html
+and*/
+
+document.addEventListener("deviceready", init, false);
+function init() {
+
+    navigator.contacts.find(
+        [navigator.contacts.fieldType.displayName],
+        gotContacts,
+        errorHandler);
+
+}
+
+function errorHandler(e) {
+    console.log("errorHandler: "+e);
+}
+
+function gotContacts(c) {
+    console.log("gotContacts, number of results "+c.length);
+    for(var i=0, len=c.length; i<len; i++) {
+        console.dir(c[i]);
+    }
+}
