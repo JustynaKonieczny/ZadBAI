@@ -32,3 +32,22 @@ function meInfo() {
 	
 	navigator.notification.alert(info);
 }
+
+function onSuccess(acceleration) {
+    alert('Acceleration X: ' + acceleration.x + '\n' +
+          'Acceleration Y: ' + acceleration.y + '\n' +
+          'Acceleration Z: ' + acceleration.z + '\n' +
+          'Timestamp: '      + acceleration.timestamp + '\n');
+};
+
+
+/*FUNKCJA WYKRYWANIA RUCHU URZADZENIA ZE STRONY
+https://cordova.apache.org/docs/en/1.5.0/phonegap/accelerometer/accelerometer.watchAcceleration.html*/
+
+function onError() {
+    alert('onError!');
+};
+
+var options = { frequency: 1000 };  // Update every 1 second
+
+var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
