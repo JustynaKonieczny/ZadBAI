@@ -8,7 +8,7 @@ function onDeviceReady() {
 
 function deviceInfo() {
 
-	info =  'Hi, I am your smartphone :-)' + '\n' +
+	info =  'Czesc, to ja, Twoja apka na telefonie o parametrach :-)' + '\n' +
 			'=====' + '\n' +
 			'Device Name    : '     + device.name     + '\n' + 
 			'Device Cordova : '  + device.cordova + '\n' + 
@@ -22,8 +22,13 @@ function deviceInfo() {
 }
 
 function meInfo() {
-	info = 'Justyna, Informatyka Stosowana, UEK' + '\n' +
-			'Przedmiot: Bogate Aplikacje internetowe'
+	info = 	'Imie i nazwisko: JUSTYNA KONIECZNY' + '\n' +
+		'Kierunek: Informatyka Stosowana' + '\n' +
+		'Uczelnie: UEK dzienne SUM' + '\n' +
+		'Przedmiot: BOGATE APLIKACJE INTERNETOWE' + '\n' + 
+		+ '\n' +  + '\n' + 
+		'#JavaScript' + '\n' + 
+		'Programuje w JavaScript';
 	
 	navigator.notification.alert(info);
 }
